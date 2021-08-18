@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="script" href="./funct.jss">
+</head>
+<body >
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <form>
+        <div class="form" style="background:transparent; margin:auto; width: 75%;" >
+          <h1 class="text-center" style="color: whitesmoke;">Login Form</h1>
+
+          
+              <div class="row">
+                
+                <div class="vl">
+                  <span class="vl-innertext">or</span>
+                </div>
+          
+                <div class="col">
+                  <a href="#" class="fb btn">
+                    <i style="float: inline-start;" class="fa fa-facebook fa-fw"></i>Facebook
+                   </a>
+                  <a href="#" class="twitter btn">
+                    <i style="float: inline-start;" class="fa fa-twitter fa-fw"></i> Twitter
+                  </a>
+                  <a href="#" class="google btn">
+                    <i style="float: inline-start;" class="fa fa-google fa-fw">
+                    </i> Google+
+                  </a>
+                </div>
+                <div class="floating" style="background:transparent; margin:auto; font-size: 150%; "class="form-group text-center" >
+                <input id="input__username" class="floating__input" name="username" type="email" placeholder="Username" required style="background:transparent; margin:auto; width:50%" >
+                  <label for="input__username" class="floating__label" data-content="Username">
+                <span class="hidden--visually text-center" style="margin:auto ;text-align: center; font-size:150%; ">
+                </span></label>
+                </div>
+        
+                <div class="floating" style="background:transparent; margin:auto;font-size: 150% "class="form-group text-center" >
+                <input id="input__password" type="password" class="floating__input" name="password" type="text" placeholder="Password" required  minlength="8" maxlength="16" style="background:transparent; margin:auto; width:50%" >
+                <label for="input__password" class="floating__label" data-content="Password">
+                  <span class="hidden--visually text-center"></span></label>
+                </div>
+        <br/>
+          <div class="form-group form-check ">
+            <input type="checkbox" class="form-check-input" value="lsRememberMe" id="rememberMe" style="width: 10px; height: 10px; margin-left:30px;"> 
+          </div>
+        
+          <div class="floating" > 
+            <button type="submit" value="Login" onclick="lsRememberMe()"  class="btn btn-primary">Login</button>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="topnav">
+    <a style="float: left;" href="#bar">
+    <i  class="fa fa-bars"></i></a>
+    <a style="float: left;" class="active" href="#home">Home</a>
+   <a href="#login" style="cursor:pointer" onclick="openNav()">Login</a>
+   <a href="./registration.html " onclick="document.getElementById('id01').style.display='block'">Registraion</a>
+   <a href="#cart">Cart</a>
+    <div  class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      
+    </form>
+  </div>
+</div>
+<div style="padding-left:16px">
+  <h1  >Apna Store</h1>
+  <marquee style="font-size: 24px;" id="marqtext" onmouseover="mouseOver()" onmouseout="mouseOut()">Welcome to the biggest Sell</marquee>
+</div>
+<script src="./onmouse.js">
+   
+</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+
+      <div  class="row">
+        <div  class="column">
+          <a href="./vegetab.html">
+          
+          <img   class="responsive" src="images/Online-shopping-grocery.jpg" alt="" onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'" >
+          <h1 class="heading" >Vegetabels</h2>
+          </a>
+        </div>
+        <div class="column">
+          <img  class="responsive" src="images/iaablwy7tlr1cczu9phm.jpg" alt=""  onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'" > 
+          <h1 class="heading" >Grocery</h2>
+        </div>
+        <div class="column">
+          <img   class="responsive" src="images/fd56fe106a889d7842bd4e519a95d5c8.jpg" alt="" onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'" >
+          <h1 class="heading" >Electronics</h2>
+        </div>
+      
+      
+        <div class="column">
+          <img class="responsive" src="images/Online-shopping-grocery.jpg" alt="" onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'">
+        </div>
+        <div class="column">
+          <img class="responsive" src="images/iaablwy7tlr1cczu9phm.jpg" alt="" onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'">
+        </div>
+        <div class="column">
+          <img class="responsive" src="images/fd56fe106a889d7842bd4e519a95d5c8.jpg" alt="" onmouseover="style='filter:blur(0px)'" onmouseout="style='filter:blur(8px)'">
+        </div>
+      </div>
+      
+      
+</div>
+</body>
+</html>

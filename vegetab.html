@@ -1,0 +1,633 @@
+<!doctype html>
+<html><head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./vegetablestyle.css">
+<link rel="stylesheet" href="./style.css">
+</head><body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <form>
+            <div class="form" style="background:transparent; margin:auto; width: 75%;" >
+              <h1 class="text-center" style="color: whitesmoke;">Login Form</h1>
+    
+              
+                  <div class="row">
+                    
+                    <div class="vl">
+                      <span class="vl-innertext">or</span>
+                    </div>
+              
+                    <div class="col">
+                      <a href="#" class="fb btn">
+                        <i style="float: inline-start;" class="fa fa-facebook fa-fw"></i>Facebook
+                       </a>
+                      <a href="#" class="twitter btn">
+                        <i style="float: inline-start;" class="fa fa-twitter fa-fw"></i> Twitter
+                      </a>
+                      <a href="#" class="google btn">
+                        <i style="float: inline-start;" class="fa fa-google fa-fw">
+                        </i> Google+
+                      </a>
+                    </div>
+                    <div class="floating" style="background:transparent; margin:auto; font-size: 150%; "class="form-group text-center" >
+                    <input id="input__username" class="floating__input" name="username" type="email" placeholder="Username" required style="background:transparent; margin:auto; width:50%" >
+                      <label for="input__username" class="floating__label" data-content="Username">
+                    <span class="hidden--visually text-center" style="margin:auto ;text-align: center; font-size:150%; ">
+                    </span></label>
+                    </div>
+            
+                    <div class="floating" style="background:transparent; margin:auto;font-size: 150% "class="form-group text-center" >
+                    <input id="input__password" type="password" class="floating__input" name="password" type="text" placeholder="Password" required  minlength="8" maxlength="16" style="background:transparent; margin:auto; width:50%" >
+                    <label for="input__password" class="floating__label" data-content="Password">
+                      <span class="hidden--visually text-center"></span></label>
+                    </div>
+            <br/>
+              <div class="form-group form-check ">
+                <input type="checkbox" class="form-check-input" value="lsRememberMe" id="rememberMe" style="width: 10px; height: 10px; margin-left:30px;"> 
+              </div>
+            
+              <div class="floating" > 
+                <button type="submit" value="Login" onclick="lsRememberMe()"  class="btn btn-primary">Login</button>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+
+    <div class="topnav">
+        <a style="float: left;" href="#bar">
+        <i  class="fa fa-bars"></i></a>
+        <a style="float: left;" class="active" href="#home">Home</a>
+       <a href="#login" style="cursor:pointer" onclick="openNav()">Login</a>
+       <a href="./registration.html " onclick="document.getElementById('id01').style.display='block'">Registraion</a>
+       <a href="#cart">Cart</a>
+        <div  class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+          
+        </form>
+      </div>
+    </div>
+    <div style="padding-left:16px">
+      <h1  >Apna Store</h1>
+      <marquee style="font-size: 24px;" id="marqtext" onmouseover="mouseOver()" onmouseout="mouseOut()">Welcome to the biggest Sell</marquee>
+    </div>
+    <script src="./onmouse.js">
+       
+    </script>
+    <h2>Vegetabels</h2>
+    
+    <marquee behavior="" direction="left">!! Hurry few Vegetabels in Stock !! </marquee>
+    <div class="container">
+        <div class="row mt-5 mb-2">
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/369_18-01-2020_sponge-gourd-2-1-1.jpg" />
+                    <div class="content-details">
+                        <h2>Ridged Groud</h2>
+                        <h3>तुरई</h3>
+                    </div>
+                    </div>
+                    <div>
+                       <h4 class="centre"> Rs 30 per kg</h4>
+                    </div>
+                    <div class="centre" >
+                    <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                        <label for="">-</label>
+                    </button>
+                    <input  type="text" value="0"  class="centre">
+                    <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                        <label for="">+</label>
+                    </button>
+                    </div>
+                    <div class="centre" >
+                        <button class="butt1" type="submit">Add To Cart</button>
+                        <button class="butt2" type="submit">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/big green chlii.jpg" />
+                    <div class="content-details">
+                        <h2>Pickle Chilli</h2>
+                        <h3>अचार मिर्च</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/chichinda-snake-gourd.png" />
+                    <div class="content-details">
+                        <h2>Snake Groud</h2>
+                        <h3>चिचिण्डा</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/fenugreek leaf.jpg" />
+                    <div class="content-details">
+                        <h2>Fenugreek Leaf</h2>
+                        <h3>मेथी का पत्ता</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/fresh-pointed-gourd.jpeg" />
+                    <div class="content-details">
+                        <h2>Pointed Groud</h2>
+                        <h3>परवल</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/garllic.jpg" />
+                    <div class="content-details">
+                        <h2>Garlic</h2>
+                        <h3>लहसुन</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/ginger.jpg" />
+                    <div class="content-details">
+                        <h2>Ginger</h2>
+                        <h3>अदरक</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/green chlii.jpg" />
+                    <div class="content-details">
+                        <h2>Green Chilli</h2>
+                        <h3>हरी मिर्च</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/jackfruit.jpeg" />
+                    <div class="content-details">
+                        <h2>Jackfruit</h2>
+                        <h3>कटहल</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/ladifinger.jpg" />
+                    <div class="content-details">
+                        <h2>Ladi Finger</h2>
+                        <h3>भिन्डी</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/mushroom.jpg" />
+                    <div class="content-details">
+                        <h2>Mushroom</h2>
+                        <h3>मशरूम</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/Onion-alternative_1200.jpg" />
+                    <div class="content-details">
+                        <h2>Onion</h2>
+                        <h3>प्याज</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/potato.jpg" />
+                    <div class="content-details">
+                        <h2>Potato</h2>
+                        <h3>आलू</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/pumpkin.jpg" />
+                    <div class="content-details">
+                        <h2>Pumpkin</h2>
+                        <h3>कद्दू</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/Radish.jpg" />
+                    <div class="content-details">
+                        <h2>Radish</h2>
+                        <h3>मूली</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/spinch.jpg" />
+                    <div class="content-details">
+                        <h2>Spinach</h2>
+                        <h3>पालक</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/sweet potato.jpg" />
+                    <div class="content-details">
+                        <h2>Sweet Potato</h2>
+                        <h3>शकरकंद</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text"value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/tomato_281240360.jpg" />
+                    <div class="content-details">
+                        <h2>Tomato</h2>
+                        <h3>टमाटर</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text"value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/turmericc.jpg" />
+                    <div class="content-details">
+                        <h2>Turmeric</h2>
+                        <h3>हल्दी</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+            <div class="overlay-six mb-3 col-md-3 col-sm-6 col-12">
+                <div class="content">
+                    <div class="content-overlay text-center bg-white">
+                        <img class="img-thumbnail" src="./vegetablesimage/White-Goosefoot-Bathuaa.jpg" />
+                    <div class="content-details">
+                        <h2>Goosefoot</h2>
+                        <h3>बथुआ</h3>
+                    </div>
+                    </div>
+                    <div>
+                        <h4 class="centre"> Rs 30 per kg</h4>
+                     </div>
+                    <div class="centre">
+                        <button class="minus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;">
+                            <label for="">-</label>
+                        </button>
+                        <input type="text" value="0" class="centre">
+                        <button class="plus-btn" name="button" type="button" style=" border-radius: 50%; width: 15%;" >
+                            <label for="">+</label>
+                        </button>
+                        </div>
+                        <div class="centre" >
+                            <button class="butt1" type="submit">Add To Cart</button>
+                            <button class="butt2" type="submit">Buy</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="./functions/additem.js" > </script>
+        <script src="./functions/subtractitem.js"></script>
+        <script src="./addsub.js"></script>
+    </div>
+</body>
+</html>

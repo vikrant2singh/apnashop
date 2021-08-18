@@ -1,0 +1,134 @@
+<html>
+    <head>
+<link rel="stylesheet" href="./registrstyle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="./style.css">
+
+   </head>
+   <body >
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <form>
+            <div class="form" style="background:transparent; margin:auto; width: 75%;" >
+              <h1 class="text-center" style="color: whitesmoke;">Login Form</h1>
+    
+              
+                  <div class="row">
+                    
+                    <div class="vl">
+                      <span class="vl-innertext">or</span>
+                    </div>
+              
+                    <div class="col">
+                      <a href="#" class="fb btn">
+                        <i style="float: inline-start;" class="fa fa-facebook fa-fw"></i>Facebook
+                       </a>
+                      <a href="#" class="twitter btn">
+                        <i style="float: inline-start;" class="fa fa-twitter fa-fw"></i> Twitter
+                      </a>
+                      <a href="#" class="google btn">
+                        <i style="float: inline-start;" class="fa fa-google fa-fw">
+                        </i> Google+
+                      </a>
+                    </div>
+                    <div class="floating" style="background:transparent; margin:auto; font-size: 150%; "class="form-group text-center" >
+                    <input id="input__username" class="floating__input" name="username" type="email" placeholder="Username" required style="background:transparent; margin:auto; width:50%" >
+                      <label for="input__username" class="floating__label" data-content="Username">
+                    <span class="hidden--visually text-center" style="margin:auto ;text-align: center; font-size:150%; ">
+                    </span></label>
+                    </div>
+            
+                    <div class="floating" style="background:transparent; margin:auto;font-size: 150% "class="form-group text-center" >
+                    <input id="input__password" type="password" class="floating__input" name="password" type="text" placeholder="Password" required  minlength="8" maxlength="16" style="background:transparent; margin:auto; width:50%" >
+                    <label for="input__password" class="floating__label" data-content="Password">
+                      <span class="hidden--visually text-center"></span></label>
+                    </div>
+            <br/>
+              <div class="form-group form-check ">
+                <input type="checkbox" class="form-check-input" value="lsRememberMe" id="rememberMe" style="width: 10px; height: 10px; margin-left:30px;"> 
+              </div>
+            
+              <div class="floating" > 
+                <button type="submit" value="Login" onclick="lsRememberMe()"  class="btn btn-primary">Login</button>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+
+    <div class="topnav">
+        <a style="float: left;" href="#bar">
+        <i  class="fa fa-bars"></i></a>
+        <a style="float: left;" class="active" href="#home">Home</a>
+       <a href="#login" style="cursor:pointer" onclick="openNav()">Login</a>
+       <a href="./registration.html " onclick="document.getElementById('id01').style.display='block'">Registraion</a>
+       <a href="#cart">Cart</a>
+        <div  class="search-container">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+          
+        </form>
+      </div>
+    </div>
+    <div style="padding-left:16px">
+      <h1  >Apna Store</h1>
+      <marquee style="font-size: 24px;" id="marqtext" onmouseover="mouseOver()" onmouseout="mouseOut()">Welcome to the biggest Sell</marquee>
+    </div>
+    <script src="./onmouse.js">
+       
+    </script>
+     
+    <div class="content">
+       <div style="text-align: center;"><h1>Registration</h1> </div>
+       <div>
+           <form  action="">
+            <div>
+           <label id="firstname" style="padding-right: 10%;"> First Name :- </label>
+           <input  type="text" name="firstname" id="firstname" placeholder="First Name" required>
+           <input type="text" name="firstname" id="firstname" placeholder="Last Name" required>
+        </div>
+       </br>
+       <div>
+           <label id="phoneno." >Phone Number :-</label>
+           <input style="margin-left: 06.35%;" type="text" name="phoneno" id="phoneno" placeholder="(+91)##########" required >
+        </div>
+
+        </br>
+        <div>
+            <label id="email" >E-mail :-</label>
+            <input  style="margin-left:14%;" type="text" name="email" id="email" placeholder="Enter Your Email" required >
+        </div>
+        </br>
+        <div>
+        <label  >Password :-</label>
+        <input style="margin-left:11.5%;" type="password" name="password" id="password" placeholder="Enter Password" required >
+        <input style="margin-left:-150;" type="checkbox" onclick="passShow()"> 
+        <label style="font-size: 16px; margin-left: -17%;" for="pass">Show Password </label> 
+        
+        </div>
+        <br>
+        <div >
+            <label for="delveri">Delevery Address :-</label>
+            <input style="margin-left: 03.5%;" type="text" placeholder="House no / flat no">
+            <input type="text" placeholder="street/area/">
+            <br>
+            <input type="text" style="margin-left: 23.4%; margin-top: 03%;" placeholder="adress line 1">
+            <input type="text"placeholder="adress line 2" >
+            <br>
+            <input type="text" style="margin-left: 23.4%; margin-top: 03%;" placeholder="state">
+            <input type="text" placeholder="pincode">
+        </div>
+
+
+        
+
+        
+            </form>
+        </div>
+        <script src="./showpass.js"></script>
+    </div>
+   </body>
+</html>
